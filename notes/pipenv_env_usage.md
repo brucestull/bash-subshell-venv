@@ -1,0 +1,283 @@
+
+
+## Use `pipenv-env`'s `pipenv` to create a new current-working-directory virtual environment
+
+`/home/flynntknapp/Programming/pipenv-env/venv/bin/pipenv install`
+
+## Will list all packages in the `pipenv-env` virtual environment
+
+`/home/flynntknapp/Programming/pipenv-env/venv/bin/pip list`
+
+## Will list all packages in the `TEMP-DIR-z85xl9uM` virtual environment
+
+`~/.local/share/virtualenvs/TEMP-DIR-z85xl9uM/bin/pip list`
+
+## Use `pipenv-env`'s `pipenv` to create a new `TEMP-DIR-02-MclwAu_G` virtual environment for `TEMP-DIR-02`
+
+```bash
+
+`/home/flynntknapp/Programming/pipenv-env/venv/bin/pipenv install`
+
+```bash
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ ~/Programming/pipenv-env/venv/bin/pipenv install
+Creating a virtualenv for this project
+Pipfile: /home/flynntknapp/Programming/TEMP-DIR-02/Pipfile
+Using /usr/bin/python3.12.3 to create virtualenv...
+⠸ Creating virtual environment...created virtual environment CPython3.12.3.final.0-64 in 205ms
+  creator CPython3Posix(dest=/home/flynntknapp/.local/share/virtualenvs/TEMP-DIR-02-MclwAu_G, clear=False,
+no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=/home/flynntknapp/.local/share/virtualenv)
+    added seed packages: pip==25.0.1
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+✔ Successfully created virtual environment!
+Virtualenv location: /home/flynntknapp/.local/share/virtualenvs/TEMP-DIR-02-MclwAu_G
+Creating a Pipfile for this project...
+Pipfile.lock not found, creating...
+Locking  dependencies...
+Locking  dependencies...
+Updated Pipfile.lock (702ad05de9bc9de99a4807c8dde1686f31e0041d7b5f6f6b74861195a52110f5)!
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+Installing dependencies from Pipfile.lock (2110f5)...
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+
+## Verify that `Pipfile` and `Pipfile.lock` were created in the `TEMP-DIR-02` directory
+
+```bash
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ ls -al
+total 16
+drwxr-xr-x 2 flynntknapp flynntknapp 4096 Apr 26 21:51 .
+drwxr-xr-x 5 flynntknapp flynntknapp 4096 Apr 26 21:50 ..
+-rw-r--r-- 1 flynntknapp flynntknapp  139 Apr 26 21:51 Pipfile
+-rw-r--r-- 1 flynntknapp flynntknapp  454 Apr 26 21:51 Pipfile.lock
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+
+## Check installed global Python packages
+
+```bash
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ pip list
+Package             Version
+------------------- -------------
+attrs               23.2.0
+Automat             22.10.0
+Babel               2.10.3
+bcrypt              3.2.2
+blinker             1.7.0
+certifi             2023.11.17
+chardet             5.2.0
+click               8.1.6
+cloud-init          24.4.1
+colorama            0.4.6
+command-not-found   0.3
+configobj           5.0.8
+constantly          23.10.4
+cryptography        41.0.7
+dbus-python         1.3.2
+distro              1.9.0
+distro-info         1.7+build1
+httplib2            0.20.4
+hyperlink           21.0.0
+idna                3.6
+incremental         22.10.0
+Jinja2              3.1.2
+jsonpatch           1.32
+jsonpointer         2.0
+jsonschema          4.10.3
+launchpadlib        1.11.0
+lazr.restfulclient  0.14.6
+lazr.uri            1.0.6
+markdown-it-py      3.0.0
+MarkupSafe          2.1.5
+mdurl               0.1.2
+netifaces           0.11.0
+oauthlib            3.2.2
+pip                 24.0
+pyasn1              0.4.8
+pyasn1-modules      0.2.8
+pycurl              7.45.3
+Pygments            2.17.2
+PyGObject           3.48.2
+PyHamcrest          2.1.0
+PyJWT               2.7.0
+pyOpenSSL           23.2.0
+pyparsing           3.1.1
+pyrsistent          0.20.0
+pyserial            3.5
+python-apt          2.7.7+ubuntu4
+pytz                2024.1
+PyYAML              6.0.1
+requests            2.31.0
+rich                13.7.1
+service-identity    24.1.0
+setuptools          68.1.2
+six                 1.16.0
+systemd-python      235
+Twisted             24.3.0
+typing_extensions   4.10.0
+ubuntu-pro-client   8001
+unattended-upgrades 0.1
+urllib3             2.0.7
+wadllib             1.3.6
+wheel               0.42.0
+zope.interface      6.1
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+
+## Activate the `TEMP-DIR-02` virtual environment using `source` and path to `activate`
+
+```bash
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ source ~/.local/share/virtualenvs/TEMP-DIR-02-MclwAu_G/bin/activate
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+
+## List all packages in the `TEMP-DIR-02` virtual environment
+
+```bash
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ pip list
+Package Version
+------- -------
+pip     25.0.1
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+
+## Deactivate the `TEMP-DIR-02` virtual environment using `deactivate`
+
+```bash
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ deactivate
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+
+## Use `pipenv-env`'s `pipenv` to activate the `TEMP-DIR-02` virtual environment by using `TEMP-DIR-02`'s `Pipfile`
+
+### The `source` command is automatically run by `pipenv` when using `pipenv shell`
+
+`source /home/flynntknapp/.local/share/virtualenvs/TEMP-DIR-02-MclwAu_G/bin/activate`
+
+```bash
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ ../pipenv-env/venv/bin/pipenv shell
+Launching subshell in virtual environment...
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$  source /home/flynntknapp/.local/share/virtualenvs/TEMP-DIR-02-MclwAu_G/bin/activate
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+
+## List all packages in the `TEMP-DIR-02` virtual environment
+
+```bash
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ pip list
+Package Version
+------- -------
+pip     25.0.1
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+## Deactivate the `TEMP-DIR-02` virtual environment using `exit`
+
+```bash
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ exit
+exit
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+## Check installed global Python packages
+
+```bash
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ pip list
+Package             Version
+------------------- -------------
+attrs               23.2.0
+Automat             22.10.0
+Babel               2.10.3
+bcrypt              3.2.2
+blinker             1.7.0
+certifi             2023.11.17
+chardet             5.2.0
+click               8.1.6
+cloud-init          24.4.1
+colorama            0.4.6
+command-not-found   0.3
+configobj           5.0.8
+constantly          23.10.4
+cryptography        41.0.7
+dbus-python         1.3.2
+distro              1.9.0
+distro-info         1.7+build1
+httplib2            0.20.4
+hyperlink           21.0.0
+idna                3.6
+incremental         22.10.0
+Jinja2              3.1.2
+jsonpatch           1.32
+jsonpointer         2.0
+jsonschema          4.10.3
+launchpadlib        1.11.0
+lazr.restfulclient  0.14.6
+lazr.uri            1.0.6
+markdown-it-py      3.0.0
+MarkupSafe          2.1.5
+mdurl               0.1.2
+netifaces           0.11.0
+oauthlib            3.2.2
+pip                 24.0
+pyasn1              0.4.8
+pyasn1-modules      0.2.8
+pycurl              7.45.3
+Pygments            2.17.2
+PyGObject           3.48.2
+PyHamcrest          2.1.0
+PyJWT               2.7.0
+pyOpenSSL           23.2.0
+pyparsing           3.1.1
+pyrsistent          0.20.0
+pyserial            3.5
+python-apt          2.7.7+ubuntu4
+pytz                2024.1
+PyYAML              6.0.1
+requests            2.31.0
+rich                13.7.1
+service-identity    24.1.0
+setuptools          68.1.2
+six                 1.16.0
+systemd-python      235
+Twisted             24.3.0
+typing_extensions   4.10.0
+ubuntu-pro-client   8001
+unattended-upgrades 0.1
+urllib3             2.0.7
+wadllib             1.3.6
+wheel               0.42.0
+zope.interface      6.1
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+
+```bash
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ ../pipenv-env/venv/bin/pipenv shell
+Launching subshell in virtual environment...
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$  source /home/flynntknapp/.local/share/virtualenvs/TEMP-DIR-02-MclwAu_G/bin/activate
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+
+```bash
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ which python
+/home/flynntknapp/.local/share/virtualenvs/TEMP-DIR-02-MclwAu_G/bin/python
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+
+## `dactivate`-ing the `TEMP-DIR-02` virtual environment using `deactivate` the `source` command
+
+```bash
+(TEMP-DIR-02) flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ deactivate
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ which python
+/usr/bin/python
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
+
+## `exit`-ing the `TEMP-DIR-02` virtual environment using `exit` the `pipenv shell` command
+
+```bash
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ exit
+exit
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$ which python
+/usr/bin/python
+flynntknapp@DELL-DESKTOP:~/Programming/TEMP-DIR-02$
+```
